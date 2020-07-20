@@ -1,0 +1,14 @@
+﻿
+
+<form class="text-center border border-light p-5" action="@Url.Action("CodeMatch", "Home")">
+
+    <h4 class="h4 mb-4">Enter Verification Code</h4>
+
+    <p>We just sent a verification code to @ViewBag.UserEmail. Please check this email and enter the code below to authenticate your access.</p>
+
+    <input name="Code" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Verification Code">
+
+    <button class="btn btn-info btn-block my-4" type="submit">Next</button>
+
+
+</form>

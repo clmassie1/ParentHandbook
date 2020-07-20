@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+    <form class="text-center border border-light p-5" action="@Url.Action("OnPost", "Home")">
+
+        <p class="h4 mb-4">Please Type your last name, your first name, your email address and press "Search".</p>
+
+        <p>You need to use the email addresss associated with your student in infinte Campus</p>
+
+        <input type="text" name="lasttname" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Last Name">
+
+        <input type="text" name="firstname" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="First Name">
+
+        <input type="email" name="email" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Email..">
+
+        <button class="btn btn-info btn-block my-4" type="submit">Search</button>
+
+
+    </form>
+
+    <p>@ViewBag.msg</p>
